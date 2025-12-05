@@ -1,0 +1,273 @@
+  * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .topo {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        .central {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            background-color: #ffffff;
+            padding: 5px;
+            border-radius: 4px;
+            margin-right: 20px;
+            height: 70px;
+            margin-left: 20px;
+            float: left;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        .textos {
+            float: left;
+            margin-top: 10px;
+        }
+
+        .textos h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        .textos h2 {
+            font-size: 16px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .navegacao {
+            width: 1200px;
+            margin: 0 auto;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            color: #666666;
+        }
+        
+        .navegacao a {
+            color: #003366;
+            text-decoration: underline;
+        }
+
+        .corpo {
+            width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        .esq {
+            width: 65%;
+            float: left;
+            padding-left: 20px;
+        }
+
+        .dir {
+            width: 30%;
+            float: right;
+            padding-right: 20px;
+        }
+
+        .limpa {
+            clear: both;
+        }
+
+        .ano {
+            background-color: #2e7d32;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .ano-fechado {
+            background-color: #a81212;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .titulo {
+            font-size: 32px;
+            color: #003366;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+
+        .tags span {
+            background: #e0e0e0;
+            color: #555;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 13px;
+            margin-right: 5px;
+        }
+
+        .imagem {
+            width: 100%;
+            height: 300px;
+            background-color: #ddd;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .box {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .box h3 {
+            color: #003366;
+            border-bottom: 2px solid #980000;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            margin-top: 0;
+            display: inline-block;
+        }
+
+        .box p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .lista li {
+            margin-bottom: 8px;
+        }
+        .lista li::before {
+            content: "• ";
+            color: #980000;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            color: #003366;
+            background-color: #f9f9f9;
+        }
+
+        .fotos {
+            overflow: hidden;
+        }
+        .foto {
+            width: 31%;
+            height: 100px;
+            background-color: #eee;
+            float: left;
+            margin-right: 2%;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            border-radius: 4px;
+        }
+        .foto:last-child {
+            margin-right: 0;
+        }
+
+        .quadro {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            border-top: 4px solid #003366;
+        }
+
+        .verde {
+            background-color: #f1f8f1;
+            border-top: 4px solid #2e7d32;
+        }
+
+        .quadro h4 {
+            color: #003366;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+
+        .linha {
+            margin-bottom: 12px;
+        }
+        
+        .nome {
+            font-weight: bold;
+            color: #555;
+            font-size: 12px;
+            text-transform: uppercase;
+            display: block;
+        }
+
+        .botao {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+        
+        .botao:hover {
+            background-color: #1b5e20;
+        }
+
+        .fim {
+            background-color: #003366;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            border-top: 5px solid #980000;
+            clear: both;
+        }

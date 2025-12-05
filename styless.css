@@ -1,0 +1,233 @@
+/* RESET E FONTE GLOBAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif; /* Fonte oficial da UFRRJ */
+    background-color: #f9f9f9;       /* Fundo cinza bem clarinho */
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- CABEÇALHO UFRRJ --- */
+.header-ufrrj {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    padding: 15px 5%; /* Margem lateral responsiva */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-rural {
+    height: 80px; /* Tamanho do logo */
+    width: auto;
+}
+
+.texto-header h1 {
+    font-size: 1.2rem;
+    color: #008237; /* Verde Oficial UFRRJ */
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.texto-header p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.barra-institucional {
+    height: 8px;
+    background: linear-gradient(90deg, #008237 70%, #FFCC00 30%); /* Verde e Amarelo */
+    width: 100%;
+}
+
+/* --- CONTEÚDO PRINCIPAL --- */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    color: #008237;
+    margin-bottom: 30px;
+    border-left: 5px solid #FFCC00; /* Detalhe amarelo */
+    padding-left: 15px;
+}
+
+/* --- SEÇÃO DO CARROSSEL --- */
+.sessao-extensao {
+    margin-bottom: 60px;
+    background: #fff; /* Fundo branco para destacar os cards */
+    padding: 20px 0;
+    border-radius: 8px;
+}
+
+.titulo-sessao {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 22px;
+    padding-left: 20px; /* Alinha com o início do carrossel */
+}
+
+/* --- CARROSSEL E CARDS --- */
+.carrossel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slider-container {
+    display: flex;
+    gap: 20px;
+    padding: 10px 5px; /* Espaço para a sombra não cortar */
+    
+    /* MANTIDO SEU TAMANHO FIXO PARA 3 CARDS */
+    width: 790px;
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0; /* Borda fina e cinza (mais elegante) */
+    border-radius: 8px;
+    min-width: 248px;
+    max-width: 248px;
+    /* Sombra suave em vez de borda preta grossa */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Sobe um pouquinho ao passar o mouse */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    border-color: #008237; /* Borda fica verde ao passar o mouse */
+}
+
+.card-img img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 3px solid #FFCC00; /* Detalhe amarelo abaixo da foto */
+    display: block;
+}
+
+.card-txt {
+    padding: 15px;
+    text-align: left; /* Texto alinhado à esquerda fica mais formal */
+}
+
+.card-txt h3 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #008237; /* Título do card em Verde */
+    font-weight: 700;
+}
+
+.card-txt p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* --- SETAS --- */
+.seta {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: #008237; /* Setas verdes */
+    cursor: pointer;
+    padding: 0 15px;
+    z-index: 10;
+    transition: transform 0.2s;
+}
+
+.seta:hover {
+    transform: scale(1.2);
+    color: #005f28; /* Verde mais escuro no hover */
+}
+
+/* --- ESTILOS DA SEÇÃO INFORMATIVA (PARA CALOUROS) --- */
+
+.sessao-informativa {
+    background-color: #ffffff; /* Fundo branco para limpeza */
+    padding: 40px;
+    border-radius: 8px;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Sombra suave */
+    max-width: 900px;
+    line-height: 1.7; /* Aumenta o espaçamento entre linhas */
+}
+
+.titulo-sessao-info {
+    color: #008237; /* Verde Rural */
+    font-size: 2rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #FFCC00; /* Linha amarela para destaque */
+}
+
+.texto-extensao-wrapper h3 {
+    color: #005f28; /* Verde escuro */
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.texto-extensao-wrapper p {
+    margin-bottom: 15px;
+}
+
+/* Estilo para as listas */
+.texto-extensao-wrapper ul {
+    list-style-type: none; 
+    padding-left: 0;
+    margin: 15px 0 25px 0;
+}
+
+.texto-extensao-wrapper ul li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="5" fill="#FFCC00"/></svg>') no-repeat left 6px; /* Bullet point amarelo */
+    padding-left: 25px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.dica-final {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    padding: 15px;
+    background-color: #f0f8f0; /* Fundo verde super clarinho */
+    border-left: 5px solid #008237; /* Borda verde */
+    margin-top: 30px;
+}
+
+.fim {
+    width: auto; 
+    margin: 0 auto;
+    background-color: #003366;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 5px solid #980000;
+    clear: both;
+}
