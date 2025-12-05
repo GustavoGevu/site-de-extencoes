@@ -269,37 +269,3 @@ a {
     clear: both;
 }
 
-/* --- CORREÇÃO DAS IMAGENS --- */
-
-/* 1. Arrumando o Banner Principal */
-.imagem {
-    /* Garante que o container não tenha padding atrapalhando */
-    padding: 0; 
-    /* Remove o flexbox antigo que era só para centralizar texto */
-    display: block; 
-    overflow: hidden; /* Corta o que sobrar da imagem */
-}
-
-.imagem img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* A mágica: preenche tudo sem deformar */
-    display: block;
-    border-radius: 8px; /* Mantém a borda arredondada */
-}
-
-/* 2. Arrumando as 3 Fotos Pequenas */
-.foto {
-    /* Remove o flexbox de texto */
-    display: block;
-    padding: 0;
-    overflow: hidden;
-}
-
-.foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* A mágica novamente */
-    display: block;
-    border-radius: 4px;
-}
